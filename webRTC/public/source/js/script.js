@@ -72,7 +72,6 @@ document.addEventListener(
       if (acceptsCall) {
         // Answer the call with your own video/audio stream
         call.answer(window.localStream);
-
         // Receive data
         call.on("stream", function(stream) {
           // Store a global reference of the other user stream
