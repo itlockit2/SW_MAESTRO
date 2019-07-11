@@ -4,13 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev:server": "nodemon --exec babel-node src/server.js"
+    "dev:server": "nodemon --exec babel-node src/server.js",
+    "build:styles": "gulp styles"
   },
   "dependencies": {
     "@babel/core": "^7.5.0",
     "@babel/node": "^7.5.0",
     "@babel/preset-env": "^7.5.2",
     "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
     "pug": "^2.0.4",
     "socket.io": "^2.2.0"
